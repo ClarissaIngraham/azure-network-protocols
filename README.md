@@ -34,7 +34,7 @@ Welcome in this tutorial we will be going over Network Security Groups and Inspe
 
 </p>
 <p>
-Next you will connect the Windows 10 VM to the remote desktop. Once that is done, you will download Wireshark on the Windows 10 VM. Wireshark is a network protocol analyzer that will help you capture and inspect data packets traveling through a network. It allows you to monitor network traffic real-time and also troubleshoot network issues. 
+Next you will connect the Windows 10 VM to the remote desktop. Once that is done, you will download Wireshark on the Windows 10 VM. Here is the link to download Wireshark https://www.wireshark.org/download.html. Wireshark is a network protocol analyzer that will help you capture and inspect data packets traveling through a network. It allows you to monitor network traffic in real-time and also troubleshoot network issues. 
 </p>
 <br />
 
