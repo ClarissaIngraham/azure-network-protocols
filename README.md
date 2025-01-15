@@ -3,7 +3,7 @@
 </p>
 
 <h1>Network Security Groups (NSGs) and Inspecting Traffic Between Azure Virtual Machines</h1>
-Welcome to this tutorial, on configuring Network Security Groups (NSGs) and inspecting network protocols within your Azure environment. <br />
+In this tutorial I will guide you through the steps to create resources in Azure, observe various types of network traffic using Wireshark, and understand the behavior of different protocols. <br />
 
 
 
@@ -23,20 +23,18 @@ Welcome to this tutorial, on configuring Network Security Groups (NSGs) and insp
 - Windows 10 (21H2)
 - Ubuntu Server 20.04
 
-<h2>High-Level Steps</h2>
-
-- Step 1
-- Step 2
-- Step 3
-- Step 4
-
 <h2>Actions and Observations</h2>
-
+Welcome in this tutorial we will be going over Network Security Groups and Inspecting Network Protocols. You will first create a resource group in Azure, and within that resource group you will create two VM's(Virtual Machines). One will be a Linux machine and the other will be a Windows 10 machine. These 2 VM's must be assigned to the same virtual network and have 2vcps (2 Virtual Central Processing Units).
+</p>
+<br />
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![image](https://github.com/user-attachments/assets/ef7b58a6-4ded-4bfc-9841-d66e5ebad39c)
+<p>
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Next you will connect the Windows 10 VM to the remote desktop. Once that is done, you will download Wireshark on the Windows 10 VM. Wireshark is a network protocol analyzer that will help you capture and inspect data packets traveling through a network. It allows you to monitor network traffic real-time and also troubleshoot network issues. 
 </p>
 <br />
 
