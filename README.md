@@ -24,7 +24,7 @@ In this tutorial I will guide you through the steps to create a resource group i
 - Ubuntu Server 20.04
 
 <h2>Actions and Observations</h2>
-Welcome in this tutorial we will be going over Network Security Groups and Inspecting Network Protocols. You will first create a resource group in Azure, and within that resource group you will create two VM's(Virtual Machines). One will be a Linux machine and the other will be a Windows 10 machine. These 2 VM's must be assigned to the same virtual network and have 2vcps (2 Virtual Central Processing Units).
+Welcome first you will be going over where you will create the resource group and the 2 VM's(Virtual Machines). You will first create a resource group in Azure, and within that resource group you will create two VM's. One will be a Linux machine and the other will be a Windows 10 machine. These 2 VM's must be assigned to the same virtual network and have 2vcps (2 Virtual Central Processing Units).
 </p>
 <br />
 <p>
@@ -34,7 +34,7 @@ Welcome in this tutorial we will be going over Network Security Groups and Inspe
 
 </p>
 <p>
-Next you will connect the Windows 10 VM to the remote desktop. Once that is done, you will download Wireshark on the Windows 10 VM. Here is the link to download Wireshark https://www.wireshark.org/download.html. Wireshark is a network protocol analyzer that will help you capture and inspect data packets traveling through a network. It allows you to monitor network traffic in real-time and also troubleshoot network issues. Once you have Wireshark installed you will begin to filter for ICMP(Internet Control Message Protocol) traffic. This is a network layer protocol used to seek out any network connection issues, ping is used for these types of issues. Then you will use powershell to ping, ping checks if a host is reachable and uses ICMP echo request and echo reply messages. You will ping the private IP address of your linux VM so you can see the packets on Wireshark. (Ex: ping 10.0.0.5)
+Next you will connect the Windows 10 VM to a remote desktop. Once that is done, you will download Wireshark on the Windows 10 VM. Here is the link to download Wireshark https://www.wireshark.org/download.html. Wireshark is a network protocol analyzer that will help you capture and inspect data packets traveling through a network. It allows you to monitor network traffic in real-time and also troubleshoot network issues. Once you have Wireshark installed you will begin to filter for ICMP(Internet Control Message Protocol) traffic. This is a network layer protocol used to seek out any network connection issues, ping is used for these types of issues. Then you will use powershell to ping, ping checks if a host is reachable and uses ICMP echo request and echo reply messages. You will ping the private IP address of your linux VM so you can see the packets on Wireshark. (Ex: ping 10.0.0.5)
 </p>
 <br />
 
