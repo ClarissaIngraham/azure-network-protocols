@@ -39,13 +39,12 @@ Next you will connect the Windows 10 VM to the remote desktop. Once that is done
 <br />
 
 ![image](https://github.com/user-attachments/assets/392411c3-d92f-4e55-880f-e76356666126)
-
-
+<p>
 
 <p>
 </p>
 <p>
-You will now initiate a continuous ping from your Windows 10 VM to your Linux VM. This will continuously ping until you decide to stop it. To perfrom this action, in powershell you will enter ping and the Linux private IP address (ex: ping 10.0.0.5 -t). While this continuous ping is happening, you will go into the Linux VM and create a inbound security rule within the network security group. This rule will block any ICMP incoming traffic. To allow the ICMP traffic to continue again, you will go back into the the Linux network security group and delete the inbound security rule you created to block the incoming traffic.
+You will now initiate a continuous ping from your Windows 10 VM to your Linux VM. This will continuously ping until you decide to stop it. To perfrom this action, in powershell you will enter ping and the Linux private IP address (ex: ping 10.0.0.5 -t). While this continuous ping is happening, you will go into the Linux VM and create a inbound security rule within the network security group. This rule will block any ICMP incoming traffic. To allow the ICMP traffic to continue again, you will go back into the Linux VM network security group and delete the inbound security rule you created to block the incoming traffic.
 </p>
 <br />
 
@@ -64,6 +63,15 @@ You will now initiate a continuous ping from your Windows 10 VM to your Linux VM
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+You will now observe SSH (secure shell) traffic in wireshark from the Windows VM. SSH allows us to securely access and manage network devices, usually remotely. So from the Windows VM you're going to securely access the Linux VM by using the Linux private IP address, ex(ssh labuser@10.0.0.5). You will now see in wireshark starts to capture SSH packets.
 </p>
 <br />
+
+
+![image](https://github.com/user-attachments/assets/1f1a5eae-d604-441f-acac-7e92316bf546)
+
+
+Now you will filter for DHCP(Dynamic Host Configuration Protocol). It is used to automactically assign IP addresses and uses ports 67 and 68. You will request a new IP address, by saving the commands ipconfig /release and ipconfig /renew on the Windows VM and then running those commands in powershell. During this process the Windows VM will release to old IP address and automatically restart with a new IP address.
+
+
+![image](https://github.com/user-attachments/assets/e15caf45-7675-4a75-a3b7-82f8820a20e1)
