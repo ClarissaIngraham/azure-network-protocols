@@ -71,7 +71,7 @@ You will now observe SSH (secure shell) traffic in wireshark from the Windows VM
 ![image](https://github.com/user-attachments/assets/1f1a5eae-d604-441f-acac-7e92316bf546)
 
 
-Now you will filter for DHCP(Dynamic Host Configuration Protocol). It is used to automactically assign IP addresses and uses ports 67 and 68. You will request a new IP address, by saving the commands ipconfig /release and ipconfig /renew on the Windows VM and then running those commands in powershell. During this process the Windows VM will release to old IP address and automatically restart with a new IP address.
+Now you will filter for DHCP(Dynamic Host Configuration Protocol). It is used to automactically assign IP addresses and uses ports 67 and 68. You will request a new IP address, by saving the commands ipconfig /release and ipconfig /renew on the Windows VM and then running those commands in powershell. During this process the Windows VM will release the old IP address and automatically restart with a new IP address.
 
 
 ![image](https://github.com/user-attachments/assets/e15caf45-7675-4a75-a3b7-82f8820a20e1)
