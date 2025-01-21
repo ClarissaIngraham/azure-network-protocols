@@ -63,7 +63,7 @@ You will now initiate a continuous ping from your Windows 10 VM to your Linux VM
 
 </p>
 <p>
-You will now observe SSH (secure shell) traffic in wireshark from the Windows VM. SSH allows us to securely access and manage network devices, usually remotely. So from the Windows VM you're going to securely access the Linux VM by using the Linux private IP address, ex(ssh labuser@10.0.0.5). You will now see in wireshark starts to capture SSH packets.
+You will now observe SSH (secure shell) traffic in wireshark from the Windows VM. SSH allows us to securely access and manage network devices, usually remotely. So from the Windows 10 VM you're going to securely access the Linux VM by using the command ssh, the username of the Linux VM and the Linux private IP address, ex(ssh labuser@10.0.0.5). You will now see that Wireshark starts to capture the SSH packets.
 </p>
 <br />
 
