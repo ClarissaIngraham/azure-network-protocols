@@ -44,7 +44,7 @@ Next you will connect the Windows 10 VM to a remote desktop. Once that is done, 
 <p>
 </p>
 <p>
-You will now initiate a continuous ping from your Windows 10 VM to your Linux VM. This will continuously ping until you decide to stop it. To perfrom this action, in powershell you will enter ping and the Linux private IP address (ex: ping 10.0.0.5 -t). While this continuous ping is happening, you will go into the Linux VM and create a inbound security rule within the network security group. This rule will block any ICMP incoming traffic. To allow the ICMP traffic to continue again, you will go back into the Linux VM network security group and delete the inbound security rule you created to block the incoming traffic.
+You will now initiate a continuous ping from your Windows 10 VM to your Linux VM. This will continuously ping until you decide to stop it. To perfrom this action, in powershell you will enter ping and the Linux private IP address (ex: ping 10.0.0.5 -t). While this continuous ping is happening, you will go into the Linux VM and create a inbound security rule within the network security group. This rule will block any ICMP incoming traffic. To allow the ICMP traffic to continue again, you will go back into the Linux VM network security group and delete the inbound security rule you created.
 </p>
 <br />
 
