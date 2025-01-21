@@ -15,7 +15,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Microsoft Azure (Virtual Machines/Compute)
 - Remote Desktop
 - Various Command-Line Tools
-- Various Network Protocols (SSH, RDH, DNS, HTTP/S, ICMP)
+- Various Network Protocols (ICMP, SSH, DHCP, DNS, RDP)
 - Wireshark (Protocol Analyzer)
 
 <h2>Operating Systems Used </h2>
@@ -77,4 +77,19 @@ Now you will filter for DHCP(Dynamic Host Configuration Protocol). It is used to
 ![image](https://github.com/user-attachments/assets/e15caf45-7675-4a75-a3b7-82f8820a20e1)
 
 
-Now it time to filter for DNS(Domain Name System) traffic. DNS is essentially translates domain names into IP addresses. In Wireshark we input DNS
+Now it is time to filter for DNS(Domain Name System) traffic. DNS translates domain names into IP addresses. We will first filter for DNS in Wireshark. In the Windows 10 VM we will open up powershell and type the command nslookup yahoo.com. This process allows the DNS server to translates the domain name, which is yahoo.com into an IP address.
+
+
+
+
+![image](https://github.com/user-attachments/assets/9e2bb639-4c8d-4bb6-90c1-95f020a14490)
+
+
+Last but not least, we will now filter for RDP(Remote Desktop Protocol). RDP is a protocol that allows you to connect to a computer or server remotely over a network. We will first type tcp.port == 3389 in wireshark, there you be able to non-stop spamming. The reason we are seeing this is because we are currently connected to a VM using RDP, meaning traffic is always being transmitted.
+
+
+![image](https://github.com/user-attachments/assets/9733138c-f360-4513-87c6-96588c3f64e7)
+
+
+
+
