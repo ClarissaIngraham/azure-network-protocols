@@ -75,3 +75,6 @@ Now you will filter for DHCP(Dynamic Host Configuration Protocol). It is used to
 
 
 ![image](https://github.com/user-attachments/assets/e15caf45-7675-4a75-a3b7-82f8820a20e1)
+
+
+Now it time to filter for DNS(Domain Name System) traffic. DNS is essentially translates domain names into IP addresses. In Wireshark we input DNS
